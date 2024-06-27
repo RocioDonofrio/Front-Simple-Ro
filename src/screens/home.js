@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 import { getValueFor } from "../utils/storage";
-import { getMaterias } from "../config/urlapis"; // Asumiendo que tienes una función para obtener las materias del backend
+import { getMaterias } from "../config/urlapis"; 
 import { Card } from "../components/card";
 import { useNavigation } from "@react-navigation/native"; // Importa useNavigation desde React Navigation
 
@@ -51,7 +51,7 @@ const Home = () => {
     <View style={styles.container}>
       <TouchableOpacity
         style={styles.backButton}
-        onPress={() => navigation.goBack()} // Navega hacia atrás al presionar el botón
+        onPress={() => navigation.goBack()} 
       >
         <Text style={styles.backText}>Atrás</Text>
       </TouchableOpacity>
